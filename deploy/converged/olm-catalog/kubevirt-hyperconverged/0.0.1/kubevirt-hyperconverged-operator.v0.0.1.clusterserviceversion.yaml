@@ -78,7 +78,7 @@ metadata:
           "spec": {
             "nodeName": "nodename",
             "reason": "node maintenance reason"
-          }          
+          }
         }
       ]
     description: Creates and maintains a HyperConverged KubeVirt Deployment
