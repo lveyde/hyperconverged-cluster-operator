@@ -743,7 +743,7 @@ spec:
             - apiGroups:
               - security.openshift.io
               resourceNames:
-              - privileged
+              - anyuid
               resources:
               - securitycontextconstraints
               verbs:
@@ -1215,12 +1215,12 @@ spec:
                   - "2"
                   env:
                   - name: OPERATOR_IMAGE
-                    value: kubevirt/virt-operator:v0.20.1
+                    value: kubevirt/virt-operator:v0.19.0
                   - name: WATCH_NAMESPACE
                     valueFrom:
                       fieldRef:
                         fieldPath: metadata.annotations['olm.targetNamespaces']
-                  image: kubevirt/virt-operator:v0.20.1
+                  image: kubevirt/virt-operator:v0.19.0
                   imagePullPolicy: IfNotPresent
                   name: virt-operator
                   ports:
